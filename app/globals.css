@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #140F0D;
+  color: #F3ECD9;
+}
+
+/* Signature element: concentric target-ring motif, used as section
+   dividers / ambient background — literal archery scoring rings,
+   not decoration for its own sake. */
+.target-rings {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.target-rings::before,
+.target-rings::after {
+  content: '';
+  position: absolute;
+  border-radius: 9999px;
+  border: 1px solid rgba(217, 166, 28, 0.16);
+}
+
+.target-rings::before {
+  width: 68vw;
+  height: 68vw;
+  top: -18vw;
+  right: -20vw;
+}
+
+.target-rings::after {
+  width: 40vw;
+  height: 40vw;
+  top: -4vw;
+  right: -4vw;
+  border-color: rgba(217, 166, 28, 0.24);
+}
+
+.font-display {
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-plex-mono);
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  color: #D9A61C;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@keyframes pageIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.page-transition {
+  animation: pageIn 0.5s ease-out both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+  .page-transition {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+::selection {
+  background: #D9A61C;
+  color: #140F0D;
+}
+
+/* Thin gold scrollbar for the coach slider and achievements panel */
+.scrollbar-thin {
+  scrollbar-width: thin;
+  scrollbar-color: #D9A61C transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background-color: rgba(217, 166, 28, 0.5);
+  border-radius: 9999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
