@@ -7,7 +7,7 @@ export default function Hero() {
     <section className="relative h-screen min-h-[720px] overflow-hidden flex flex-col">
       {/* Background photo — archer in full draw */}
       <Image
-        src="https://images.unsplash.com/photo-1591491634026-3d581076c14d?q=80&w=2000&auto=format&fit=crop"
+        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/streams/2012/July/120719/480073-ss-120627-olympic-hotties-jakekaminski.jpg"
         alt="Archer drawing a bow in full focus"
         fill
         priority
