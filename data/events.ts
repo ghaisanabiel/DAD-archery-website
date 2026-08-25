@@ -27,7 +27,7 @@ export const upcomingEvents: ArcheryEvent[] = [
     location: 'Jalan Kenari, Yogyakarta City',
     category: 'Open Championship',
     status: 'OPEN REGISTRATION',
-    image: 'https://images.unsplash.com/photo-1591491634026-3d581076c14d?q=80&w=1400&auto=format&fit=crop',
+    image: 'https://jurnalbogor.com/wp-content/uploads/2026/02/DAD-JUARA-UMUM.jpeg',
     description:
       'Kejuaraan terbuka tahunan DAD Archery di Yogyakarta, mempertemukan atlet recurve dan compound dari seluruh Jawa dalam kompetisi jarak 30m dan 50m.',
     rules: ['Kategori recurve & compound', 'Jarak 30m (junior) / 50m (senior)', 'Wajib membawa peralatan sendiri'],

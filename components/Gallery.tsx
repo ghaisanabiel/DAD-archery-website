@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
 const galleryItems = [
-  { src: 'https://images.unsplash.com/photo-1591491634026-3d581076c14d?q=80&w=900&auto=format&fit=crop', category: 'Training', span: 'row-span-2' },
+  { src: 'https://asset.inilahkoran.id/uploads/images/2026/02/image_750x500_6992fa9d36c20.webp', category: 'Training', span: 'row-span-2' },
   { src: 'https://images.unsplash.com/photo-1554068865-24cecd4e34b8?q=80&w=900&auto=format&fit=crop', category: 'Competition', span: '' },
   { src: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?q=80&w=900&auto=format&fit=crop', category: 'Events', span: '' },
   { src: 'https://images.unsplash.com/photo-1516934024742-b461ee5df267?q=80&w=900&auto=format&fit=crop', category: 'Community', span: 'row-span-2' },
