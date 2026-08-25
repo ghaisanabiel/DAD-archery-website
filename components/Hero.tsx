@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import DadLogo from "./Dadlogo";
+import DadLogo from "./DadLogo";
 
 export default function Hero() {
   return (
