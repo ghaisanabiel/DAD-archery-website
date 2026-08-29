@@ -1,13 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
-import DadLogo from "./DadLogo";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Hero() {
   return (
     <section className="relative h-screen min-h-[720px] overflow-hidden flex flex-col">
       {/* Background photo — archer in full draw */}
       <Image
-        src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/streams/2012/July/120719/480073-ss-120627-olympic-hotties-jakekaminski.jpg"
+        src="https://images.unsplash.com/photo-1591491634026-3d581076c14d?q=80&w=2000&auto=format&fit=crop"
         alt="Archer drawing a bow in full focus"
         fill
         priority
@@ -26,15 +25,13 @@ export default function Hero() {
 
       {/* Location badge, top right */}
       <div className="relative z-10 flex justify-end px-6 md:px-10 pt-24">
-        <span className="font-mono text-[10px] uppercase tracking-widest2 text-mist">
-          📍 Jakarta, ID
-        </span>
+        <span className="font-mono text-[10px] uppercase tracking-widest2 text-mist">📍 Jakarta, ID</span>
       </div>
 
       {/* Centered brand block */}
       <div className="relative z-10 flex-1 flex flex-col items-center justify-center px-6 text-center -mt-10">
         <div className="mb-6 drop-shadow-[0_8px_24px_rgba(0,0,0,0.5)]">
-          <DadLogo size={150} />
+          <Image src="/dad-logo.png" alt="DAD Archery" width={150} height={150} priority className="object-contain" />
         </div>
         <h1 className="font-display text-4xl md:text-6xl text-bone tracking-wide leading-none">
           DAD <span className="text-gold">ARCHERY</span>
@@ -67,8 +64,7 @@ export default function Hero() {
       {/* Bottom tagline strip */}
       <div className="relative z-10 pb-10 text-center px-6">
         <p className="text-mist text-sm md:text-base">
-          Komunitas &amp; Pusat Pelatihan Archery — Training, Competition,
-          Equipment
+          Komunitas &amp; Pusat Pelatihan Archery — Training, Competition, Equipment
         </p>
       </div>
     </section>

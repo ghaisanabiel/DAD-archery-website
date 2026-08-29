@@ -1,8 +1,8 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
-import DadLogo from './DadLogo';
 
 const links = [
   { href: '/', label: 'Home' },
@@ -50,7 +50,7 @@ export default function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-6 md:px-10 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-3">
-          <DadLogo size={44} />
+          <Image src="/dad-logo.png" alt="DAD Archery" width={44} height={44} className="object-contain" />
           <span className="hidden sm:block font-display text-xl tracking-wide text-bone">
             DAD <span className="text-gold">ARCHERY</span>
           </span>
